@@ -5,7 +5,7 @@ title: Building and walking a binary search tree
 
 
 <div class="message">
-  In this post we will see how to create a binary search tree from scratch and walk through it. Binary search tree are an important data structure as they allow fast lookup, addition and removal of items and reduces the time complexity to <em>O(logn)</em>. 
+  In this post we will see how to create a binary search tree from scratch and walk through it. Binary search tree are an important data structure as they allow fast lookup, addition and removal of items and reduces the time complexity to <em>O(logn)</em>.
 </div>
 
 ### What is a binary search tree?
@@ -45,7 +45,7 @@ function makeBinarySearchTree(arr) {
             parent.value = arr[i]
             continue;
         }
-        // In all other cases call addNode passing value 
+        // In all other cases call addNode passing value
         // and parent
         addNode(arr[i], parent)
     }
@@ -63,9 +63,9 @@ function makeBinarySearchTree(arr) {
   {@param : value} parent node of the tree
 */
 function addNode(value, parent) {
-/* 
+/*
 1. Call findNodeToInsert to figure out at what node the value will be inserted.
-2. If the value need to be inerted at the left of the returned node create a new tree object at the  left of the returned node and initialize its value. 
+2. If the value need to be inserted at the left of the returned node create a new tree object at the  left of the returned node and initialize its value.
 3. Repeat the same procedure in case the value need to be inserted at the right of the returned node.
 */
     var elm = findNodeToInsert(value, parent)
@@ -123,7 +123,7 @@ function findNodeToInsert(value, node) {
 Above code snippet will need a bit of explaining in details. We are using recursion here as a binary tree repeats itself at each node with the property `left < parent < right`. Using this property whatever logic we perform on a single node can be done on all of them recursively. Explaining this logic below:
 
 1. Fist check `if (value < node.value)` i.e if the value which need to be inserted into the tree if greater than the value of node.
-2. If the result of __step 1__ is true, it means the value is going to be inserted to the left of the node/subtree. Please note that we still haven't figured out the exact place of insersion but we know for sure that it would be at the left.
+2. If the result of __step 1__ is true, it means the value is going to be inserted to the left of the node/subtree. Please note that we still haven't figured out the exact place of insertion but we know for sure that it would be at the left.
 3. Continuing on __step 2__
   * We first check if the node has a left element by checking `if (node.left)`, if this turns out be true, it means we have to walk further down the tree. We do that by invoking and returning `findNodeToInsert` recursively.
   * If `if (node.left)` condition turns out to be false, it means we are at the node where the new tree node need to be created so we return from here passing the node reference and the place(`where`) where a new node need to be created. Note that this forms the basis of ending the recursion.
@@ -142,7 +142,7 @@ A binary search tree can traversed in 3 ways. Each of the traversal derive its n
 
 Inorder traversal gives us a sorted array because of the property of tree that `left < parent < right`. e.g consider a tree just having 3 elements i.e the tree is 4(parent) 3(left) 5(right) now an inorder traversal will give is 3(left) 4 (parent) 5(right) which is the sorted order. So now we know why binary search tree are good for sorting.
 
-To acheive the traversal of Binary search tree we will again take help of recursion by walking through the tree starting from parent. To walk left we define a `walkLeft` function, to walk right we define a `walkRight` function.
+To achieve the traversal of Binary search tree we will again take help of recursion by walking through the tree starting from parent. To walk left we define a `walkLeft` function, to walk right we define a `walkRight` function.
 
 {% highlight js %}
 function walkLeft(subtree,walk) {
@@ -159,7 +159,7 @@ function walkRight(subtree,walk) {
 
 {% endhighlight %}
 
-Both of the above functions are higher order functions requiring a `walk` function as arugment. `walk` function is the function from where the above functions will be invoked since we will have to recursively call the function by repeating the steps. The order with which `walkLeft` or `walkRight` are called will determince the type of traversal. Things will get more clear in the below section where we will be defining the `walk` function for inorder,preorder and postorder traversals.
+Both of the above functions are higher order functions requiring a `walk` function as argument. `walk` function is the function from where the above functions will be invoked since we will have to recursively call the function by repeating the steps. The order with which `walkLeft` or `walkRight` are called will determine the type of traversal. Things will get more clear in the below section where we will be defining the `walk` function for inorder,preorder and postorder traversals.
 
 ## In-order
 
@@ -182,7 +182,7 @@ function walkRight(subtree,walk) {
 }
 
 function inOrderTraversal(tree) {
-    
+
     walk(tree)
 
     function walk(subtree) {
