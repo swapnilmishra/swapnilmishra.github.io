@@ -1,24 +1,21 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:         pygments
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Lanyon
-tagline:          'A Jekyll theme'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            Web fanboy
+tagline:          'Musings about the open web and javascript'
+description:      'This is a blog about web and javascript. I reside on twitter <a href="https://www.twitter.com/swapnil_mishra">@swapnil_mishra</a> and on github <a href="https://www.github.com/swapnilmishra">@swapnilmishra</a>. Do connect if you feel like interacting.'
 url:              http://lanyon.getpoole.com
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Swapnil Mishra'
+  url:            https://twitter.com/swapnil_mishra
 
 paginate:         5
 
-# Custom vars
-version:          2.0.0
-
-github:
-  repo:           https://github.com/poole/lanyon
+# Gems
+gems : [jekyll-paginate]
