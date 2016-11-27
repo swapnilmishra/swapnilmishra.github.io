@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to build pasteebins like jsbin, jsfiddle, dabblet
+title: How to build pastebins like jsbin, jsfiddle, dabblet
 ---
 
 I have always wondered how tools like [jsbin](jsbin.com), [jsfiddle](https://jsfiddle.net) or [dabblet](http://dabblet.com/) work. So, thought of putting together some code to do the same.
@@ -38,6 +38,8 @@ let createEl = function(type,innerhtml){
 ```
 
 ### How to run
+
+After cloing the [github repo](https://github.com/swapnilmishra/jsbin-jsfiddle-clone) run given below commands.
 
 ```javascript
 npm install
