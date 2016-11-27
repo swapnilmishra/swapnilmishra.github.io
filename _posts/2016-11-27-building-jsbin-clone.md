@@ -55,7 +55,7 @@ npm start
 
 Whatever I have implemented here is the easiest thing to build for these type of tools. There are tons of other things which need to be done for a tool like this to work in production. In this [link](https://github.com/jsbin/jsbin/wiki/Best-practices-for-building-your-own-live-paste-bin), creator of jsbin([Remy sharp](https://twitter.com/rem)), jsfiddle([Piotr Zalewa](https://twitter.com/zalun)) and dabblet([Lea verou](https://twitter.com/LeaVerou) ) discusses various best practices and security aspects which are very important.
 
-Few of the things which which would be needed are :
+Few of the things which would be needed are :
 
 * Handling user-accounts/login/signup/saving.
 * Ensuring the iframe is not used for XSS attacks.
