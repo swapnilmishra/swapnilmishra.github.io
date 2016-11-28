@@ -61,5 +61,7 @@ Few of the things which would be needed are :
 * Ensuring the iframe is not used for XSS attacks.
 * Ensuring the high availablity and concurrency in case of multiple concurrent edits.
 * JSbin(which is my favorite) also keeps history of every edit made.
+* Linting CSS,JS, HTML.
+* Support for preprocessors.
 
 I have tried to shed some light on how these tools can be built and hope this would be useful to many of you. We are very fortunate to have these smart people who have built all these awesome tools which, makes our life so easy. Thats why the web is the most vibrant open source community.
