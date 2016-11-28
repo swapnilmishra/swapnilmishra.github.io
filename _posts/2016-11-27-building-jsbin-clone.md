@@ -9,7 +9,7 @@ I have always wondered how awesome tools like [jsbin](jsbin.com), [jsfiddle](htt
 
 ### Show me some code
 
-It basically boils down to creating an iframe and injecting the content(html,css,js) to update. All the code to build this is on my [github repo](https://github.com/swapnilmishra/jsbin-jsfiddle-clone). Below is the code from [createIframe.js](https://github.com/swapnilmishra/jsbin-jsfiddle-clone/blob/master/createIFrame.js) file which takes raw HTML,JS,CSS and create an iframe from it there by showing the output.
+It basically boils down to creating an iframe and injecting the content(html,css,js) to update. All the code to build this is on my [github repo](https://github.com/swapnilmishra/jsbin-jsfiddle-clone). Below is the code from [createIframe.js](https://github.com/swapnilmishra/jsbin-jsfiddle-clone/blob/master/src/createIFrame.js) file which takes raw HTML,JS,CSS and create an iframe from it there by showing the output.
 
 ```javascript
 let frameEl;
