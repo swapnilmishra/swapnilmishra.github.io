@@ -27,7 +27,6 @@ class MarkdownWrapper extends React.Component {
           shortname='swapnilmishra-github-io'
           identifier={post.title}
           title={post.title}
-          url={post.path}
         />
       </div>
     );
