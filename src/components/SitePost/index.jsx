@@ -10,7 +10,6 @@ import '../../static/css/highlight.css'
 
 class SitePost extends React.Component {
     render() {
-        debugger;
         const {route} = this.props
         const post = route.page.data
         const home = (

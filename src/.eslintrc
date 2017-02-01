@@ -16,5 +16,6 @@
   },
   "globals": {
     "__PREFIX_LINKS__": true,
+    "document" : true
   },
 }
