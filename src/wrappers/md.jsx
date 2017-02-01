@@ -24,7 +24,7 @@ class MarkdownWrapper extends React.Component {
         <Helmet title={`${post.title} - ${config.siteTitle}`} />
         {template}
         <DisqusThread
-          shortname='swapnilmishra-github-io'
+          shortname='https-swapnilmishra-github-io'
           identifier={post.title}
           title={post.title}
         />
