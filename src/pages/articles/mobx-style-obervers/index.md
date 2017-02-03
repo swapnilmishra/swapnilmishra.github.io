@@ -10,7 +10,7 @@ description: "A very basic MobX style Observer"
 
 A very basic [MobX](https://github.com/mobxjs/mobx) style Observers. This is not even scratching the surface w.r.t the actual library as there are so many other things involved in building the whole thing.
 
-This is to just given an idea to how things work in data binding libraries.
+This is to just give an idea on how things work in data binding libraries.
 
 [JSbin](https://jsbin.com/xiciqa/edit?html,js,console) link for the code.
 
