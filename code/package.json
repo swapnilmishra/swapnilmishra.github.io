@@ -23,7 +23,6 @@
     "gatsby-remark-smartypants": "^2.1.20",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
-    "gh-pages": "^2.2.0",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -45,6 +44,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public",
+    "copy": "cp -r public/* ../",
+    "commit": "cd .. && git add . && git commit -m 'gh-pages' ",
+    "build-blog": "yarn build && yarn copy && yarn commit"
   }
 }
