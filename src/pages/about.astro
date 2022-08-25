@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+const title = "About | Swapnil"
+const description = "Swapnil Profile."
+const permalink = `${Astro.site.href}about`
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="about"
+>
+  <div class="container">
+    <h1 id="about-me">About me</h1>
+    <p>
+      I am a frontend developer who loves working with Javascript whether its <strong
+        >NodeJS</strong
+      > or <strong>Browser</strong>.
+    </p>
+    <p>
+      I do share things, which I feel excited about on my <a
+        href="https://github.com/swapnilmishra">Github</a
+      >, <a href="https://swapnilmishra.github.io">Blog</a> and <a
+        href="https://twitter.com/swapnil_mishra">Twitter</a
+      >.
+    </p>
+    <h2 id="oss-projects">OSS projects</h2>
+    <ul>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/css-in-js">css-in-js</a> - A
+          css in js library (WIP)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/import-usage"
+            >import-usage</a
+          > - A cli tool to figure out the usage of any specific import in your source
+          files.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/viper-node">viper-nodejs</a>
+          - A configuration manager for nodejs written in Typescript and works with
+          various config formats.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/InstaLater">InstaLater</a> -
+          A chrome plugin to save images, text and url while browsing the web.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/jsbin-jsbin-clone"
+            >JSbin clone</a
+          > - A simple JSBin clone to get an undersanding of how they work internally.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://github.com/swapnilmishra/cache-javascript-localstorage"
+            >cache-javascript-localstorage</a
+          > - A library to cache JS files in localStorage, supports cache bursting
+          also. This was done way back when Service worker were still catching up
+          so might not be relevant at this point of time.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/swapnilmishra/moviespotting"
+            >Moviespotting</a
+          > - A twitter like social network where in people would share which movie
+          they are watching. Something on the lines of Goodreads for movies. Features
+          like follow someone, likes, creating list is supported.
+        </p>
+      </li>
+    </ul>
+  </div>
+</BaseLayout>
