@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
 
-const title = "Swapnil | Notes"
+const title = "Notes | Swapnil"
 const description = "Latest notes."
-const permalink = `${Astro.site.href}blog`
+const permalink = `${Astro.site.href}notes`
 
 let allPosts = await Astro.glob("../../data/notes/*.md")
 allPosts = allPosts.sort(
@@ -17,7 +17,7 @@ allPosts = allPosts.sort(
   title={title}
   description={description}
   permalink={permalink}
-  current=""
+  current="notes"
 >
   <div class="container">
     <h1>Notes</h1>
