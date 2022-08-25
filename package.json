@@ -1,0 +1,22 @@
+{
+  "name": "swapnil-mishra-blog",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/mdx": "^0.10.1",
+    "@astrojs/svelte": "^1.0.0",
+    "astro": "^1.0.3",
+    "rehype-external-links": "^2.0.0"
+  },
+  "dependencies": {
+    "reading-time": "^1.5.0",
+    "svelte": "^3.49.0"
+  }
+}
